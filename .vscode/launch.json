@@ -1,0 +1,532 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex46_BankingSystem.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex45_PlaylistCreator.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex44_MobilePhoneContacts.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.EnumProject.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.ChallengerAutoboxing.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.Autoboxing.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.ChallengerLinkedList.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.LinkedLists.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "aaa",
+            "request": "launch",
+            "mainClass": "aaa",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.ChallengerArrayList.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.ArrayAndArrayLists.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "MoreLists",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.ArrayLists.dev.lpa.MoreLists",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section10_MasteringLists.ArrayLists.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.MultipleArrays.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.ChallengerReverseArray.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex42_MinimumElement.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.ChallengerMinimunElement.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.VarArgs.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.ArrayReferences.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex41_StrengtheringArrayLogic.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.ChallengerArray.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.UssingArrays.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section9_AdvancedArrays.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.Packages.dev.lpa.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.aMasterChallengerOOP.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex40_Polyphorphism.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.ChallengerPolymorphism.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "NextMain",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.Polymorphism.NextMain",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.Polymorphism.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.ChallengerEncapsulation.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.Encapsulation.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex38_BedroomComposition.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.ChallengerSmartKitchen.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section8_AdvancedOOP.ComputerFactory.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex37_CuboidPoolAreaCalculation.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex36_InheritanceCircleAndCylinder.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.StringOptions.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "StringMethods",
+            "request": "launch",
+            "mainClass": "Section7_OOP.AllAboutStrings.StringMethods",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.AllAboutStrings.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.StringFormatting.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.ChallengeInheritance.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.TheObjectClass.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.Inheritance.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex35_ComplexNumberOperations.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex34_CarpetCostCalculator.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex33_DistanceCalculation.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex31_WallAreaComputation.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.POJOsRecordProject.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.ChallengeConstructor.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex31_AgeValidation.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Exercices.Ex30_SimpleCalculator.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.ChallegeObjectOrientered.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Section7_OOP.ClassesPart1.Main",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex28_InputCalculator",
+            "request": "launch",
+            "mainClass": "Exercices.Ex28_InputCalculator",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "ChallengerMinAndMax",
+            "request": "launch",
+            "mainClass": "Section_6.ChallengerMinAndMax",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "ReadingUserInputChallenger",
+            "request": "launch",
+            "mainClass": "Section_6.ReadingUserInputChallenger",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "ReadingUserInput",
+            "request": "launch",
+            "mainClass": "Section_6.ReadingUserInput",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "ls73_ReadingUserInput",
+            "request": "launch",
+            "mainClass": "Section_6.ls73_ReadingUserInput",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex27_DiagonalStar",
+            "request": "launch",
+            "mainClass": "Exercices.Ex27_DiagonalStar",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex26_LargestPrime",
+            "request": "launch",
+            "mainClass": "Exercices.Ex26_LargestPrime",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex25_FlourPacker",
+            "request": "launch",
+            "mainClass": "Exercices.Ex25_FlourPacker",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex24_NumberToWords",
+            "request": "launch",
+            "mainClass": "Exercices.Ex24_NumberToWords",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex23_PerfectNumber",
+            "request": "launch",
+            "mainClass": "Exercices.Ex23_PerfectNumber",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex22_GreatestCommonDivisor",
+            "request": "launch",
+            "mainClass": "Exercices.Ex22_GreatestCommonDivisor",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex21_FactorPrinter",
+            "request": "launch",
+            "mainClass": "Exercices.Ex21_FactorPrinter",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex20_LastDigitChecker",
+            "request": "launch",
+            "mainClass": "Exercices.Ex20_LastDigitChecker",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex19_SharedDigit",
+            "request": "launch",
+            "mainClass": "Exercices.Ex19_SharedDigit",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex18_EvenDigitSum",
+            "request": "launch",
+            "mainClass": "Exercices.Ex18_EvenDigitSum",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex16_NumberPalindrome",
+            "request": "launch",
+            "mainClass": "Exercices.Ex16_NumberPalindrome",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "DigitSumChallenger",
+            "request": "launch",
+            "mainClass": "Section_6.DigitSumChallenger",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "WhileLoopChallenger",
+            "request": "launch",
+            "mainClass": "Section_6.WhileLoopChallenger",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "WhileLoop",
+            "request": "launch",
+            "mainClass": "Section_6.WhileLoop",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex15_SumOddRange",
+            "request": "launch",
+            "mainClass": "Exercices.Ex15_SumOddRange",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Ex15",
+            "request": "launch",
+            "mainClass": "Exercices.Ex15",
+            "projectName": "Java_421991f3"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
