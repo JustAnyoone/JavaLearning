@@ -1,4 +1,4 @@
-package Exercices.Ex32_WallAreaComputation;
+package Ex32_WallAreaComputation;
 
 public class Wall {
     

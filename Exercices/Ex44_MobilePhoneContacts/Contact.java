@@ -1,4 +1,4 @@
-package Exercices.Ex44_MobilePhoneContacts;
+package Ex44_MobilePhoneContacts;
 
 public class Contact {
     private String name;

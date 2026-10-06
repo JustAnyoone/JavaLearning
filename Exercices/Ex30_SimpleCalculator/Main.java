@@ -1,4 +1,4 @@
-package Exercices.Ex30_SimpleCalculator;
+package Ex30_SimpleCalculator;
 
 public class Main {
     public static void main(String[] args) {

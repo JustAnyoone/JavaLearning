@@ -1,4 +1,4 @@
-package Exercices.Ex46_BankingSystem;
+package Ex46_BankingSystem;
 
 import java.util.ArrayList;
 

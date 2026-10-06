@@ -1,4 +1,4 @@
-package Exercices.Ex45_PlaylistCreator;
+package Ex45_PlaylistCreator;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

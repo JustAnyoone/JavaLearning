@@ -1,4 +1,4 @@
-package Exercices.Ex31_AgeValidation;
+package Ex31_AgeValidation;
 
 public class Main {
     public static void main(String[] args) {

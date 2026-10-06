@@ -1,6 +1,3 @@
-
-package Exercices;
-
 public class Ex23_PerfectNumber {
     public static void main(String[] args) {
         

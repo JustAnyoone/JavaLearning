@@ -1,4 +1,4 @@
-package Exercices.Ex35_ComplexNumberOperations;
+package Ex35_ComplexNumberOperations;
 
 public class ComplexNumber {
      private double real;

@@ -1,4 +1,4 @@
-package Exercices.Ex38_BedroomComposition;
+package Ex38_BedroomComposition;
 
 public class Bedroom {
     private String name;

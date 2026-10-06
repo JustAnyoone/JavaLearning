@@ -1,4 +1,4 @@
-package Exercices.Ex33_DistanceCalculation;
+package Ex33_DistanceCalculation;
 
 public class Main {
     public static void main(String[] args) {

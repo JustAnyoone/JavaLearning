@@ -1,4 +1,4 @@
-package Exercices.Ex41_StrengtheringArrayLogic;
+package Ex41_StrengtheringArrayLogic;
 
 import java.util.Scanner;
 import java.util.Arrays;

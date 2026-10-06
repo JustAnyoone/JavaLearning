@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex29_PaintJob {
 
     public static void main(String[] args) {

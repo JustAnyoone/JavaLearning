@@ -1,4 +1,4 @@
-package Exercices;
+
 import java.util.Scanner;
 public class Ex28_InputCalculator {
     public static void main(String[] args) {

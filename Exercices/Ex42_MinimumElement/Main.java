@@ -1,4 +1,4 @@
-package Exercices.Ex42_MinimumElement;
+package Ex42_MinimumElement;
 
 import java.util.Arrays;
 import java.util.Scanner;

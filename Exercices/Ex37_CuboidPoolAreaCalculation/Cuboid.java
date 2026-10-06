@@ -1,4 +1,4 @@
-package Exercices.Ex37_CuboidPoolAreaCalculation;
+package Ex37_CuboidPoolAreaCalculation;
 
 public class Cuboid extends Rectangle{
     

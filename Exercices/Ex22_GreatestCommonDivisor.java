@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex22_GreatestCommonDivisor {
     public static void main(String[] args) {
 

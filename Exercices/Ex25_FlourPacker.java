@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex25_FlourPacker {
     public static void main(String[] args) {
 

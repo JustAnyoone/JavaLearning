@@ -1,4 +1,4 @@
-package Exercices.Ex36_InheritanceCircleAndCylinder;
+package Ex36_InheritanceCircleAndCylinder;
 
 public class Circle {
 

@@ -1,4 +1,4 @@
-package Exercices.Ex43_ReverseArray;
+package Ex43_ReverseArray;
 
 import java.util.Arrays;
 import java.util.Scanner;

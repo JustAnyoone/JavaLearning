@@ -1,4 +1,4 @@
-package Exercices.Ex44_MobilePhoneContacts;
+package Ex44_MobilePhoneContacts;
      
 import java.util.ArrayList;
 

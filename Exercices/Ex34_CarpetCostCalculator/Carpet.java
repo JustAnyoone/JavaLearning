@@ -1,4 +1,4 @@
-package Exercices.Ex34_CarpetCostCalculator;
+package Ex34_CarpetCostCalculator;
 
 public class Carpet {
 

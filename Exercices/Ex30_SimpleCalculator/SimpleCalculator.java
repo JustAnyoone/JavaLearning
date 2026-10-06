@@ -1,5 +1,4 @@
-package Exercices.Ex30_SimpleCalculator;
-
+package Ex30_SimpleCalculator;
 public class SimpleCalculator {
     
     private double firstNumber;

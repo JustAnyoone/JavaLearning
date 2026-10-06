@@ -1,4 +1,4 @@
-package Exercices.Ex39_EnforcingEncapsulation;
+package Ex39_EnforcingEncapsulation;
 
 public class Main {
     public static void main(String[] args) {

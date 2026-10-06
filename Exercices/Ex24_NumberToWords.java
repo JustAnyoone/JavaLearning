@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex24_NumberToWords {
     public static void main(String[] args) {
         //NumbersToWords method Example : 

@@ -1,4 +1,4 @@
-package Exercices.Ex40_Polyphorphism;
+package Ex40_Polyphorphism;
 
 public class Main {
     public static void main(String[] args) {

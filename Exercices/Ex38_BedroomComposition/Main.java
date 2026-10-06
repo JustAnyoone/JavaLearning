@@ -1,4 +1,4 @@
-package Exercices.Ex38_BedroomComposition;
+package Ex38_BedroomComposition;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex26_LargestPrime {
     
     public static void main(String[] args) {

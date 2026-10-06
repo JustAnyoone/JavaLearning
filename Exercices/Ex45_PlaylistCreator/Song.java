@@ -1,4 +1,4 @@
-package Exercices.Ex45_PlaylistCreator;
+package Ex45_PlaylistCreator;
 
 public class Song {
     private String title;
