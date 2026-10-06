@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex20_LastDigitChecker {
     public static void main(String[] args) {
 

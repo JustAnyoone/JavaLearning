@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex18_EvenDigitSum {
     public static void main(String[] args) {
         System.out.println(getEvenDigitSum(123456789));

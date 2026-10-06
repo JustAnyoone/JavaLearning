@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex15_SumOddRange {
     public static void main(String[] args) {
         System.out.println(sumOdd(1, 100)); //→ should return 2500

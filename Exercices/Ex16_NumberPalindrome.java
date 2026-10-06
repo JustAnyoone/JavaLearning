@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex16_NumberPalindrome {
     public static void main(String[] args) {
         System.out.println(isPalindrome(-1221)); //< should return true

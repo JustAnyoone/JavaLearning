@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex21_FactorPrinter {
     public static void main(String[] args) {
         printFactors(6);

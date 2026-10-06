@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex19_SharedDigit {
     public static void main(String[] args) {
         System.out.println(hasSharedDigit(12, 23));

@@ -1,5 +1,3 @@
-package Exercices;
-
 public class Ex17_FirstLastDigitSum {
     public static void main(String[] args) {
         
