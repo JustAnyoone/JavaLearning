@@ -31,3 +31,4 @@ public class Dog extends Mammal {
         System.out.println(getExplicitType() + " shed hair all the time");
     }
 }
+
