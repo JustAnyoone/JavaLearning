@@ -3,16 +3,30 @@ package dev.lpa;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team<T> {
+record Affiliation(String name, String type, String countryCode) {
+
+    @Override
+    public final String toString() {
+        return name + " (" + type + " in " + countryCode + ")";
+    }
+}
+
+public class Team<T extends Player, S> {
 
     private String teamName;
     private List<T> teamMembers = new ArrayList<>();
     private int totalWins = 0;
     private int totalLosses = 0;
     private  int totalTies = 0;
+    private S Affiliation;
 
     public Team(String teamName) {
         this.teamName = teamName;
+    }
+
+    public Team(String teamName, S Affiliation) {
+        this.teamName = teamName;
+        this.Affiliation = Affiliation;
     }
 
     public void addTeamMember(T t){
@@ -22,8 +36,11 @@ public class Team<T> {
     }
 
     public void listTeamMembers() {
-        System.out.println(teamName + " Roster:");
-        System.out.println(teamMembers);
+        System.out.print(teamName + " Roster:");
+        System.out.println((Affiliation == null ? "" : " AFFILIATION: "+ Affiliation));
+        for (T t : teamMembers) {
+            System.out.println(t.name());
+        }
     }
     
     public int ranking() {

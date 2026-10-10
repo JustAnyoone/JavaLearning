@@ -7,7 +7,7 @@ public class SportsTeam {
 
     private String teamName;
     private List<Player> teamMembers = new ArrayList<>();
-    // private int totalWins = 0;
+    private int totalWins = 0;
     private int totalLosses = 0;
     private  int totalTies = 0;
 
