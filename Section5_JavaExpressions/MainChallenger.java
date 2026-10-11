@@ -31,4 +31,3 @@ public class MainChallenger {
         return finalScore; 
     }
 }
-
