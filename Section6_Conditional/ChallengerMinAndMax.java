@@ -38,7 +38,5 @@ public class ChallengerMinAndMax {
 
         scanner.close();
         return "The min number is:"+ min +", and the max number is:" + max;
-    }
-
-    
+    }  
 }

@@ -68,8 +68,6 @@ public class ReadingUserInput {
         return (currentYear - dob);
     }
 }
-
-
     //     String userDateOfBirth = "1999";
 
     //     int dateOfBirth = Integer.parseInt(userDateOfBirth); // Transform String into a Int data type

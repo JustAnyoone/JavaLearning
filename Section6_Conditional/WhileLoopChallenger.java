@@ -30,6 +30,7 @@ public class WhileLoopChallenger {
 
     }
 }
+
 //  int number = 0;
 //         while(number < 50) {
 //             number += 5;
