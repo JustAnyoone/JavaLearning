@@ -1,5 +1,5 @@
 package Section9_AdvancedArrays.ChallengerMinimunElement.dev.lpa;
-
+ 
 import java.util.Arrays;
 import java.util.Scanner;
 
