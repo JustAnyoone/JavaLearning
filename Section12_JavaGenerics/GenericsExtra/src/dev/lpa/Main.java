@@ -14,20 +14,59 @@ public class Main {
             students.add(new Student());
         }
         students.add(new LPAStudent());
-        printList(students);
+        // printList(students);
+        printMoreLists(students);
 
         List<LPAStudent> lpaStudents = new ArrayList<>();
         for (int i = 0; i < studentCount; i++) {
             lpaStudents.add(new LPAStudent());
         }
-        printList(lpaStudents);
+        // printList(lpaStudents);
+        printMoreLists(lpaStudents);
+
+        testsList(new ArrayList<String>(List.of("Able", "Barry", "Charlie")));
+        testsList(new ArrayList<Integer>(List.of(1, 2, 3)));
     }
+    public static void printMoreLists(List<? extends Student> students){
 
-    public static void printList(List students){
-
-        for(var student : students) {
+        // Student last = students.get(students.size()-1);
+        // students.set(0, last);
+        for (var student : students) {
             System.out.println(student);
         }
         System.out.println();
     }
+
+    public static void testsList(List<?> list) {
+
+        for (var element : list) {
+            if (element instanceof String s) {
+                System.out.println("String: " + s.toUpperCase());
+            } else if (element instanceof Integer i) {
+                System.out.println("Integer: " + i.floatValue());
+            }
+        }
+    }
+
+    // public static void testList(List<String> list){
+        
+    //     for(var element : list) {
+    //         System.out.println("String: " + element.toUpperCase());
+    //     }
+    // }
+
+    // public static void testList(List<Integer> list){
+        
+    //     for(var element : list) {
+    //         System.out.println("Integer: " + element.floatValue());
+    //     }
+    // }
+
+    // public static <T extends Student> void printList(List<T> students){
+
+    //     for(var student : students) {
+    //         System.out.println(student.getYearStarted() + ": " + student);
+    //     }
+    //     System.out.println();
+    // }
 }
