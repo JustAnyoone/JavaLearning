@@ -25,6 +25,7 @@ abstract class Point implements Mappable {
     public void render() {
         System.out.println("Render " + this + " as POINT (" + location() + ")");
     }
+    
 
     private String location() {
         return Arrays.toString(location);
