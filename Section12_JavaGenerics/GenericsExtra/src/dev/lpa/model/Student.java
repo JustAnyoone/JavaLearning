@@ -33,6 +33,9 @@ public class Student implements QueryItem{
     public boolean matchFieldValue(String fieldname, String value) {
         String fName = fieldname.toUpperCase();
         return switch(fName){
+            case "NAME" -> name.equalsIgnoreCase(value);
+            case "COURSE" -> course.equalsIgnoreCase(value);
+            case "YEARSTARTED" -> yearStarted == (Integer.parseInt(value));
             default -> false;
         };
     }

@@ -5,6 +5,17 @@ import java.util.List;
 
 import dev.lpa.model.LPAStudent;
 import dev.lpa.model.Student;
+import dev.lpa.util.QueryItem;
+import dev.lpa.util.QueryList;
+
+record Emplyoee(String name) implements QueryItem {
+
+    @Override
+    public boolean matchFieldValue(String fieldname, String value) {
+        return false;
+    }
+    
+}
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +37,15 @@ public class Main {
 
         testsList(new ArrayList<String>(List.of("Able", "Barry", "Charlie")));
         testsList(new ArrayList<Integer>(List.of(1, 2, 3)));
+
+        var QueryList = new QueryList<>(lpaStudents);
+        var matches = QueryList.getMatches("Course", "Python");
+        printMoreLists(matches);
+
+        var students2021 = QueryList.<Student>getMatches(new ArrayList<>(), "YearStarted", "2021");
+        printMoreLists(students2021);
+
+        // QueryList<Emplyoee> emplyoeeList = new QueryList<>()
     }
     public static void printMoreLists(List<? extends Student> students){
 
