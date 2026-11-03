@@ -7,10 +7,10 @@
 ![Java](https://img.shields.io/badge/Java-100%25-b07219?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Exercises](https://img.shields.io/badge/Exercises-50-2ea44f?style=for-the-badge)
 ![Course Hours](https://img.shields.io/badge/Course-135%2B%20hours-a435f0?style=for-the-badge&logo=udemy&logoColor=white)
-![Sections](https://img.shields.io/badge/Sections-5%20to%2012-0969da?style=for-the-badge)
+![Sections](https://img.shields.io/badge/Sections-5%20to%2014-0969da?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In%20progress-f0883e?style=for-the-badge)
 
-[About](#about) | [Course at a Glance](#course-at-a-glance) | [What I Learned](#what-i-learned) | [Repository Structure](#repository-structure) | [Section Highlights](#section-highlights) | [How to Run](#how-to-run) | [Credits](#credits)
+[About](#about) | [Course at a Glance](#course-at-a-glance) | [What I Learned](#what-i-learned) | [Repository Structure](#repository-structure) | [Section Highlights](#section-highlights) | [How to Run](#how-to-run) | [Roadmap](#roadmap) | [Credits](#credits)
 
 </div>
 
@@ -18,11 +18,11 @@
 
 ## About
 
-This repository contains all the Java code I wrote while following the **Java Masterclass 2025** course on Udemy. It documents my progress from the first lines of Java to object-oriented design, collections, abstraction and generics.
+This repository contains all the Java code I wrote while following the **Java Masterclass 2025** course on Udemy. It documents my progress from the first lines of Java to object-oriented design, collections, abstraction, generics, nested classes and lambda expressions.
 
 The goal is to build a solid foundation in Java, demonstrate my understanding of the language to future employers, and prepare for frameworks such as Spring, Java EE and Android development.
 
-Each section lives in its own folder, and the more advanced sections include their own README that explains the topics and challenges in detail.
+Each section lives in its own folder, and most sections and projects include their own README that explains the topics and challenges in detail.
 
 ## Course at a Glance
 
@@ -32,6 +32,7 @@ Each section lives in its own folder, and the more advanced sections include the
 | **Platform** | Udemy |
 | **Lessons** | 135+ hours of expert lessons |
 | **Exercises completed** | 50 |
+| **Sections in this repository** | 10 (Sections 5 to 14) |
 | **Language** | Java (100%) |
 | **Java versions covered** | Java 17, plus older versions such as Java 11 and Java 8 |
 | **Upcoming in the course** | Java 21 features |
@@ -49,19 +50,21 @@ Each section lives in its own folder, and the more advanced sections include the
 
 | Area | Topics practiced |
 |---|---|
-| **Java fundamentals** | Java expressions, operators, and the basic building blocks of the language |
-| **Control flow** | Conditional logic and decision making |
-| **Object-oriented programming** | Classes, objects, encapsulation, inheritance and polymorphism |
-| **Advanced OOP** | Deeper OOP concepts and class design |
-| **Arrays** | Advanced array handling |
-| **Collections** | Mastering lists and the Java Collections Framework |
+| **Java fundamentals** | Java expressions, operators, methods and method overloading |
+| **Control flow** | Conditional logic, `switch`, loops and reading user input |
+| **Object-oriented programming** | Classes, objects, constructors, inheritance, strings, POJOs and records |
+| **Advanced OOP** | Encapsulation, polymorphism and packages |
+| **Arrays** | Advanced array handling, array references and varargs |
+| **Collections** | `ArrayList`, `LinkedList`, autoboxing and enums |
 | **Abstraction** | Abstract classes, abstract methods, interfaces, default and static methods |
-| **Generics** | Generic classes, type parameters, raw types and bounded types |
+| **Generics** | Generic classes, type parameters, bounded types, `Comparable` and `Comparator` |
+| **Nested classes** | Static nested, inner, local and anonymous classes |
+| **Lambda expressions** | Replacing anonymous classes with lambdas, and sorting with comparators |
 | **Best practices** | Clean design choices, coding to an interface, and reasoning about trade-offs |
 
 ### Skills at a glance
 
-`Java 17` `OOP` `Inheritance` `Polymorphism` `Abstract Classes` `Interfaces` `Records` `Enums` `Generics` `Collections` `ArrayList` `UML Class Diagrams` `Text Blocks`
+`Java 17` `OOP` `Inheritance` `Polymorphism` `Encapsulation` `Abstract Classes` `Interfaces` `Records` `Enums` `Generics` `Collections` `ArrayList` `LinkedList` `Comparable` `Comparator` `Nested Classes` `Anonymous Classes` `Lambda Expressions` `UML Class Diagrams` `Text Blocks`
 
 ## Repository Structure
 
@@ -70,32 +73,68 @@ JavaLearning/
 ├── HelloWorld.java
 ├── Exercices/                          # Course exercises
 ├── Section5_JavaExpressions/
+│   └── MethodOverloading/
 ├── Section6_Conditional/
 ├── Section7_OOP/
+│   ├── ClassesPart1/
+│   ├── Inheritance/
+│   ├── TheObjectClass/
+│   ├── POJOsRecordProject/
+│   ├── AllAboutStrings/
+│   ├── StringOptions/
+│   ├── StringFormatting/
+│   └── (challenges)
 ├── Section8_AdvancedOOP/
+│   ├── Encapsulation/
+│   ├── Polymorphism/
+│   ├── Packages/
+│   ├── ComputerFactory/
+│   └── (challenges)
 ├── Section9_AdvancedArrays/
+│   ├── UssingArrays/
+│   ├── ArrayReferences/
+│   ├── MultipleArrays/
+│   ├── VarArgs/
+│   └── (challenges)
 ├── Section10_MasteringLists/
+│   ├── ArrayAndArrayLists/
+│   ├── ArrayLists/
+│   ├── Autoboxing/
+│   ├── LinkedLists/
+│   ├── EnumProject/
+│   └── (challenges)
 ├── Section11_Abstractrion/
 │   ├── AbstractClasses/
 │   ├── AbstractClassChallenge/
 │   ├── Interface/
 │   └── InterfaceChallenge/
-└── Section12_JavaGenerics/
-    └── Generics/
+├── Section12_JavaGenerics/
+│   ├── Generics/
+│   ├── GenericsExtra/
+│   ├── GenericClassChallenger/
+│   ├── Comparing/
+│   └── StudentChallenger/
+├── Section13_NestedClass/
+│   ├── NestedClasses/
+│   └── LocalClassChallenge/
+└── Section14_MasteringJavaLambdas/
+    └── LambdaIntro/
 ```
 
 | Folder | Content |
 |---|---|
 | `HelloWorld.java` | The very first Java program |
 | `Exercices` | The exercises completed along the course |
-| `Section5_JavaExpressions` | Java expressions and operators |
-| `Section6_Conditional` | Conditional statements |
-| `Section7_OOP` | Object-oriented programming |
-| `Section8_AdvancedOOP` | Advanced object-oriented programming |
-| `Section9_AdvancedArrays` | Advanced arrays |
-| `Section10_MasteringLists` | Working with lists |
+| [`Section5_JavaExpressions`](Section5_JavaExpressions/) | Java expressions, methods and method overloading |
+| [`Section6_Conditional`](Section6_Conditional/) | Conditional statements, `switch`, loops and user input |
+| [`Section7_OOP`](Section7_OOP/) | Object-oriented programming, strings, POJOs and records |
+| [`Section8_AdvancedOOP`](Section8_AdvancedOOP/) | Encapsulation, polymorphism and packages |
+| `Section9_AdvancedArrays` | Advanced arrays and varargs |
+| [`Section10_MasteringLists`](Section10_MasteringLists/) | Lists, autoboxing and enums |
 | `Section11_Abstractrion` | Abstract classes, interfaces and their challenges |
-| `Section12_JavaGenerics` | Generic classes and bounded types |
+| [`Section12_JavaGenerics`](Section12_JavaGenerics/) | Generic classes, bounded types and sorting with `Comparable` and `Comparator` |
+| [`Section13_NestedClass`](Section13_NestedClass/) | Nested classes, local types and anonymous classes |
+| `Section14_MasteringJavaLambdas` | Lambda expressions (in progress) |
 
 ## Section Highlights
 
@@ -206,6 +245,88 @@ public class Team<T extends Player> {
 
 </details>
 
+<details>
+<summary><b>GenericClassChallenger</b> - a generic Layer class for map elements</summary>
+
+<br>
+
+A mapping example where a generic `Layer` class only accepts `Mappable` elements, such as parks (points) and rivers (lines), and renders them with latitude and longitude data.
+
+</details>
+
+<details>
+<summary><b>Comparing</b> - Comparable vs. Comparator</summary>
+
+<br>
+
+Two interfaces for sorting, which are often confused with each other.
+
+- `Comparable<T>` compares an object with the current instance, through `compareTo`, and defines the natural order of a class.
+- `Comparator<T>` compares two objects with each other, through `compare`, and allows custom orderings without changing the class.
+
+</details>
+
+<details>
+<summary><b>StudentChallenger</b> - the final challenge of the section</summary>
+
+<br>
+
+Extends a `QueryList` from `ArrayList`, orders students by student id, adds other ways to compare them, and prints 25 random students sorted in more than one way.
+
+</details>
+
+### Section 13 - Nested Classes, Local Types and Anonymous Classes
+
+A class can contain other types in its body. This section covers the four kinds of nested classes in Java.
+
+| Type | Description |
+|---|---|
+| **Static nested class** | Declared in the class body and accessed through the outer class name |
+| **Inner class** | Declared in the class body and only accessible through an instance of the outer class |
+| **Local class** | Declared inside a method body |
+| **Anonymous class** | An unnamed class, declared and instantiated in the same statement |
+
+<details>
+<summary><b>NestedClasses</b> - the four kinds of nested classes</summary>
+
+<br>
+
+- Static nested and inner classes can access the private members of the enclosing class.
+- An inner class instance needs an instance of the enclosing class: `outerClass.new InnerClass()`.
+- Local classes capture variables from the method, which must be `final` or effectively final.
+- Anonymous classes are created in an expression, based on an interface or a superclass.
+- Includes the Bill's Burgers challenge, which adds a `Burger` inner class with toppings.
+
+</details>
+
+<details>
+<summary><b>LocalClassChallenge</b> - local and anonymous classes with employees</summary>
+
+<br>
+
+Wraps an `Employee` record in a local class with calculated fields, such as full name and years worked, and sorts the result with an anonymous class.
+
+</details>
+
+### Section 14 - Mastering Java Lambdas
+
+<details>
+<summary><b>LambdaIntro</b> - from anonymous classes to lambda expressions</summary>
+
+<br>
+
+An introduction to lambda expressions, using a `Person` record and sorting a list of people.
+
+- Sorting with an anonymous `Comparator`, and then with a lambda expression instead.
+- Declaring a local interface, `EnhancedComparator`, that extends `Comparator`.
+- Sorting by last name first, and by first name when the last names match.
+
+```java
+people.sort((o1, o2) -> o1.lastName().compareTo(o2.lastName()));
+```
+
+</details>
+
 ## How to Run
 
 ### Requirements
@@ -227,27 +348,32 @@ git clone https://github.com/JustAnyoone/JavaLearning.git
 cd JavaLearning
 ```
 
-### 2. Run a single file
-
-For a file that contains a `main` method and no package declaration:
+### 2. Run the first program
 
 ```bash
 java HelloWorld.java
 ```
 
-### 3. Compile and run a section
+### 3. Run a project from the terminal
 
-If a section has several classes, compile them together and run the class that contains `main`:
+Most projects, from Section 7 onward, follow the VS Code Java layout: the code is in a `src` folder and uses the `dev.lpa` package. Compile all the files and run the class that has the `main` method:
 
 ```bash
-cd Section11_Abstractrion/InterfaceChallenge
-javac *.java
-java Main
+cd Section14_MasteringJavaLambdas/LambdaIntro
+javac -d out $(find src -name "*.java")
+java -cp out dev.lpa.Main
 ```
 
-Replace `Main` with the name of the class that has the `main` method. If the files declare a `package`, compile from the project root and run with the full package name, for example `java com.example.Main`.
+### 4. Run a single file that declares a package
 
-### 4. Run with VS Code
+Some single files, such as the ones in `Section6_Conditional` and `Exercices`, declare a package with the same name as their folder. Compile from the repository root and run with the package name:
+
+```bash
+javac -d out Section6_Conditional/SwitchStatement.java
+java -cp out Section6_Conditional.SwitchStatement
+```
+
+### 5. Run with VS Code
 
 1. Install the **Extension Pack for Java**.
 2. Open the repository folder in VS Code.
@@ -260,6 +386,8 @@ Replace `Main` with the name of the class that has the `main` method. If the fil
 - [x] Arrays and lists
 - [x] Abstraction: abstract classes and interfaces
 - [x] Generics
+- [x] Nested classes, local types and anonymous classes
+- [ ] Lambda expressions (in progress)
 - [ ] Continue with the remaining sections of the course
 - [ ] Explore the Java 21 features when they are added to the course
 - [ ] Move on to the Spring Framework
