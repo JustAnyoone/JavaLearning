@@ -1,117 +1,117 @@
-# Section 14 - Mastering Java Lambdas
+# Lambda Mini Challenges
 
-Part of my **Java Masterclass 2025: 130+ Hours of Expert Lessons** course on Udemy. This section covers lambda expressions, functional interfaces and method references, which let Java treat a piece of behavior as a value that can be stored, passed to methods and combined.
+A Java project from the **Java Masterclass 2025: 130+ Hours of Expert Lessons** course on Udemy (Section 14 - Mastering Java Lambdas), made of seven small tasks that practice **creating and using lambda expressions**.
 
-## Overview
+## The Challenge
 
-Before lambdas, passing behavior around meant writing an anonymous class. A lambda expression is a much shorter way to write the same thing. It works with **functional interfaces**, which are interfaces with a single abstract method, and it can be shortened further with **method references** when the lambda only calls an existing method.
+This challenge is different from the others in the course. Instead of one big program, it is a series of mini challenges. Each task is tried alone first, and then solved step by step, before the next one starts.
 
-The section has seven projects. They start with the basic idea, then practice it in challenges, and end with method references and chaining.
+Two ideas tie the tasks together:
 
-## Projects
+1. Lambdas can be declared as variables, or passed directly to methods that accept them as arguments.
+2. Methods can be written so that they accept lambda expressions as parameters.
 
-| Project | Type | Description |
+### The seven mini challenges
+
+| # | Task | Solution in the project |
 |---|---|---|
-| [`LambdaIntro`](LambdaIntro/) | Lesson | From anonymous classes to lambda expressions, using a `Person` record and a sorted list |
-| [`LambdaExpressions`](LambdaExpressions/) | Lesson | Lambda syntax, functional interfaces, `forEach`, `removeIf`, `replaceAll` and `Arrays.setAll` |
-| [`MiniLambdaChallenges`](MiniLambdaChallenges/) | Challenge | Seven small tasks that practice creating and using lambdas |
-| [`LambdaExpressionChallenge`](LambdaExpressionChallenge/) | Challenge | Transforming an array of names with lambdas, using `Arrays.setAll`, `replaceAll`, `forEach` and `removeIf` |
-| [`MethodReferences`](MethodReferences/) | Lesson | The four kinds of method references |
-| [`MethodReferenceChallenge`](MethodReferenceChallenge/) | Challenge | A list of functions that mixes lambdas and method references, applied with `String.transform` |
-| [`ChainingLambdas`](ChainingLambdas/) | Lesson | Combining `Function`, `Consumer`, `Predicate` and `Comparator` into longer chains |
+| 1 | Rewrite an anonymous `Consumer<String>` class, which splits a sentence into words and prints each one, as a lambda expression. Do it by hand, without relying on the IDE. | `printWordsLambda`, plus shorter versions that use `forEach` |
+| 2 | Rewrite the method `everySecondChar`, which returns every second character of a string, as a lambda expression held in a variable of a suitable type. | `UnaryOperator<String> everySecondChar` |
+| 3 | Execute that lambda with `1234567890` as the argument, and print the result. | `everySecondChar.apply("1234567890")` |
+| 4 | Write a method, `everySecondCharacter`, that accepts a `Function` (or `UnaryOperator`) and the string to process, runs the function on that string, and returns the result. The string must not be hard coded. | `everySecondCharacter(Function<String, String> func, String source)` |
+| 5 | Call that method with the lambda from challenge 2 and `1234567890`, and print the result. | `everySecondCharacter(everySecondChar, "1234567890")` |
+| 6 | Declare a lambda with the `Supplier` interface that returns a string, and assign it to a variable called `iLoveJava`. | `Supplier<String> iLoveJava` |
+| 7 | Use the `Supplier` to get its string and print it. Lambdas are deferred execution: nothing runs until the lambda is used. | `iLoveJava.get()` |
 
-## Folder Structure
+## Key Code
+
+From anonymous class to lambda:
+
+```java
+// Anonymous class
+Consumer<String> printWords = new Consumer<String>() {
+    @Override
+    public void accept(String sentence) {
+        String[] parts = sentence.split(" ");
+        for (String part : parts) {
+            System.out.println(part);
+        }
+    }
+};
+
+// Lambda, and a more concise version of it
+Consumer<String> printWordsLambda = sentence -> {
+    String[] parts = sentence.split(" ");
+    for (String part : parts) {
+        System.out.println(part);
+    }
+};
+
+Consumer<String> printWordsConcise = sentence ->
+    Arrays.asList(sentence.split(" ")).forEach(s -> System.out.println(s));
+```
+
+A lambda in a variable, and a method that accepts a lambda:
+
+```java
+UnaryOperator<String> everySecondChar = source -> {
+    StringBuilder returnVal = new StringBuilder();
+    for (int i = 0; i < source.length(); i++) {
+        if (i % 2 == 1) {
+            returnVal.append(source.charAt(i));
+        }
+    }
+    return returnVal.toString();
+};
+
+public static String everySecondCharacter(Function<String, String> func, String source) {
+    return func.apply(source);
+}
+```
+
+A `Supplier`:
+
+```java
+Supplier<String> iLoveJava = () -> "I love Java !";
+System.out.println(iLoveJava.get());
+```
+
+## Example Output
 
 ```
-Section14_MasteringJavaLambdas/
-├── LambdaIntro/
-├── LambdaExpressions/
-├── MiniLambdaChallenges/
-├── LambdaExpressionChallenge/
-├── MethodReferences/
-├── MethodReferenceChallenge/
-└── ChainingLambdas/
+Let's
+split
+this
+up
+into
+an
+array
+24680
+24680
+I love Java !
 ```
 
 ## Concepts Practiced
 
-### Lambda Expressions
-- Replacing an anonymous class with a lambda, and writing both expression and block bodies.
-- Using `var` for lambda parameters, and using effectively final variables from the surrounding code.
-- Deferred execution: a lambda does nothing until its functional method is called.
+- **Converting anonymous classes to lambdas:** writing the shorter form by hand
+- **Lambda syntax:** expression bodies and block bodies
+- **Functional interfaces:** `Consumer`, `UnaryOperator`, `Function` and `Supplier`
+- **Lambdas as variables:** declaring a lambda and running it later with its functional method (`accept`, `apply`, `get`)
+- **Lambdas as arguments:** writing a method that accepts a `Function`
+- **Deferred execution:** a lambda does nothing until it is called
+- **Refactoring:** replacing a loop with `forEach` to make the code shorter
 
-```java
-// Anonymous class
-var comparatorLastName = new Comparator<Person>() {
-    @Override
-    public int compare(Person o1, Person o2) {
-        return o1.lastName().compareTo(o2.lastName());
-    }
-};
+## Project Structure
 
-// Lambda
-people.sort((o1, o2) -> o1.lastName().compareTo(o2.lastName()));
 ```
-
-### Functional Interfaces
-The standard interfaces from `java.util.function` that appear in the projects:
-
-| Interface | What it does | Functional method |
-|---|---|---|
-| `Consumer<T>` | Takes a value and returns nothing | `accept` |
-| `Supplier<T>` | Takes nothing and returns a value | `get` |
-| `Function<T, R>` | Turns one value into another | `apply` |
-| `UnaryOperator<T>` | A `Function` whose input and output have the same type | `apply` |
-| `BinaryOperator<T>` | Combines two values of the same type into one | `apply` |
-| `BiFunction<T, U, R>` | Turns two values into a result | `apply` |
-| `Predicate<T>` | Tests a value and returns `true` or `false` | `test` |
-
-Custom functional interfaces can be marked with `@FunctionalInterface`.
-
-### Lambdas with Collections and Arrays
-- `forEach`, `removeIf` and `replaceAll` on lists.
-- `Arrays.setAll` to fill an array from a lambda.
-- Lists backed by arrays, so that a change to the list changes the array.
-
-```java
-list.removeIf(s -> s.startsWith("ea"));
-list.replaceAll(s -> s.charAt(0) + " - " + s.toUpperCase());
+MiniLambdaChallenges/
+└── src/
+    └── dev/lpa/
+        └── Main.java    # All seven mini challenges
 ```
-
-### Method References
-A method reference is a shorter form of a lambda that only calls one method. Four kinds are covered:
-
-| Kind | Example |
-|---|---|
-| Static method | `Integer::sum` |
-| Instance method of a particular object | `System.out::println` |
-| Instance method of an arbitrary object of a type | `String::toUpperCase` |
-| Constructor | `PlainOld::new` |
-
-### Chaining
-Functional interfaces have default methods that combine lambdas:
-
-```java
-Function<String, String> f1 = uCase.andThen(s -> s.concat(" Buchalka"));
-
-Predicate<String> combined = p3.and(p4).negate();
-
-list.sort(Comparator.comparing(Person::lastName)
-    .thenComparing(Person::firstName));
-```
-
-## Challenges
-
-- **MiniLambdaChallenges** - seven small tasks: convert an anonymous class to a lambda, store a lambda in a variable, run it, pass it to a method, and use a `Supplier`.
-- **LambdaExpressionChallenge** - change an array of names step by step: make them uppercase, add a random middle initial, add a reversed last name, and remove the names where the first and last name match.
-- **MethodReferenceChallenge** - build a list of `UnaryOperator<String>` transformations, using lambdas and every kind of method reference, and apply them with `String.transform`.
-
-## Skills Gained
-
-`Lambda Expressions` `Functional Interfaces` `Method References` `Function` `Consumer` `Supplier` `Predicate` `UnaryOperator` `BinaryOperator` `Comparator` `Chaining` `Records` `Collections`
 
 ## Credits
 
-Based on the Lambda Expressions, Functional Interfaces and Method References section of the **Java Masterclass 2025: 130+ Hours of Expert Lessons** course on Udemy.
+Based on the Lambda Mini Challenges lesson from the **Java Masterclass 2025: 130+ Hours of Expert Lessons** course on Udemy.
 
 This README was created with the help of [Claude](https://claude.ai), an AI assistant by Anthropic.
