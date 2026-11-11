@@ -1,6 +1,7 @@
 package dev.lpa;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public record Card(Suit suit, String face, int rank) {
@@ -13,6 +14,9 @@ public record Card(Suit suit, String face, int rank) {
         }
     }
 
+    public static Comparator<Card> sortRankReverserdSuit(){
+        return Comparator.comparing(Card::rank).reversed().thenComparing(Card::suit);
+    }
 
     @Override
     public final String toString() {
