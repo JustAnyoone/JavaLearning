@@ -7,7 +7,7 @@
 ![Java](https://img.shields.io/badge/Java-100%25-b07219?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Exercises](https://img.shields.io/badge/Exercises-50-2ea44f?style=for-the-badge)
 ![Course Hours](https://img.shields.io/badge/Course-135%2B%20hours-a435f0?style=for-the-badge&logo=udemy&logoColor=white)
-![Sections](https://img.shields.io/badge/Sections-5%20to%2014-0969da?style=for-the-badge)
+![Sections](https://img.shields.io/badge/Sections-5%20to%2015-0969da?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In%20progress-f0883e?style=for-the-badge)
 
 [About](#about) | [Course at a Glance](#course-at-a-glance) | [What I Learned](#what-i-learned) | [Repository Structure](#repository-structure) | [Section Highlights](#section-highlights) | [How to Run](#how-to-run) | [Roadmap](#roadmap) | [Credits](#credits)
@@ -18,7 +18,7 @@
 
 ## About
 
-This repository contains all the Java code I wrote while following the **Java Masterclass 2025** course on Udemy. It documents my progress from the first lines of Java to object-oriented design, collections, abstraction, generics, nested classes and lambda expressions.
+This repository contains all the Java code I wrote while following the **Java Masterclass 2025** course on Udemy. It documents my progress from the first lines of Java to object-oriented design, abstraction, generics, nested classes, lambda expressions and the Collections Framework.
 
 The goal is to build a solid foundation in Java, demonstrate my understanding of the language to future employers, and prepare for frameworks such as Spring, Java EE and Android development.
 
@@ -32,7 +32,7 @@ Each section lives in its own folder, and most sections and projects include the
 | **Platform** | Udemy |
 | **Lessons** | 135+ hours of expert lessons |
 | **Exercises completed** | 50 |
-| **Sections in this repository** | 10 (Sections 5 to 14) |
+| **Sections in this repository** | 11 (Sections 5 to 15) |
 | **Language** | Java (100%) |
 | **Java versions covered** | Java 17, plus older versions such as Java 11 and Java 8 |
 | **Upcoming in the course** | Java 21 features |
@@ -59,12 +59,13 @@ Each section lives in its own folder, and most sections and projects include the
 | **Abstraction** | Abstract classes, abstract methods, interfaces, default and static methods |
 | **Generics** | Generic classes, type parameters, bounded types, `Comparable` and `Comparator` |
 | **Nested classes** | Static nested, inner, local and anonymous classes |
-| **Lambda expressions** | Replacing anonymous classes with lambdas, and sorting with comparators |
+| **Lambda expressions** | Functional interfaces, method references, chaining lambdas and sorting with comparators |
+| **Collections Framework** | The `Collection` interface, `TreeSet`, the `Collections` utility methods and a poker game built on a card deck |
 | **Best practices** | Clean design choices, coding to an interface, and reasoning about trade-offs |
 
 ### Skills at a glance
 
-`Java 17` `OOP` `Inheritance` `Polymorphism` `Encapsulation` `Abstract Classes` `Interfaces` `Records` `Enums` `Generics` `Collections` `ArrayList` `LinkedList` `Comparable` `Comparator` `Nested Classes` `Anonymous Classes` `Lambda Expressions` `UML Class Diagrams` `Text Blocks`
+`Java 17` `OOP` `Inheritance` `Polymorphism` `Encapsulation` `Abstract Classes` `Interfaces` `Records` `Enums` `Generics` `Collections` `ArrayList` `LinkedList` `Comparable` `Comparator` `Nested Classes` `Anonymous Classes` `Lambda Expressions` `Method References` `Functional Interfaces` `Collections Framework` `TreeSet` `Collections Utility Methods` `UML Class Diagrams` `Text Blocks`
 
 ## Repository Structure
 
@@ -95,7 +96,9 @@ JavaLearning/
 │   ├── ArrayReferences/
 │   ├── MultipleArrays/
 │   ├── VarArgs/
-│   └── (challenges)
+│   ├── ChallengerArray/
+│   ├── ChallengerMinimunElement/
+│   └── ChallengerReverseArray/
 ├── Section10_MasteringLists/
 │   ├── ArrayAndArrayLists/
 │   ├── ArrayLists/
@@ -117,8 +120,17 @@ JavaLearning/
 ├── Section13_NestedClass/
 │   ├── NestedClasses/
 │   └── LocalClassChallenge/
-└── Section14_MasteringJavaLambdas/
-    └── LambdaIntro/
+├── Section14_MasteringJavaLambdas/
+│   ├── LambdaIntro/
+│   ├── LambdaExpressions/
+│   ├── MiniLambdaChallenges/
+│   ├── LambdaExpressionChallenge/
+│   ├── MethodReferences/
+│   ├── MethodReferenceChallenge/
+│   └── ChainingLambdas/
+└── Section15_Framework_List_Sets_Maps/
+    ├── CollectionsOverview/
+    └── CollectionsMethods/
 ```
 
 | Folder | Content |
@@ -134,94 +146,10 @@ JavaLearning/
 | `Section11_Abstractrion` | Abstract classes, interfaces and their challenges |
 | [`Section12_JavaGenerics`](Section12_JavaGenerics/) | Generic classes, bounded types and sorting with `Comparable` and `Comparator` |
 | [`Section13_NestedClass`](Section13_NestedClass/) | Nested classes, local types and anonymous classes |
-| `Section14_MasteringJavaLambdas` | Lambda expressions (in progress) |
+| [`Section14_MasteringJavaLambdas`](Section14_MasteringJavaLambdas/) | Lambda expressions, method references and chaining lambdas |
+| [`Section15_Framework_List_Sets_Maps`](Section15_Framework_List_Sets_Maps/) | The Collections Framework: `Collection`, `TreeSet`, `Collections` methods and a poker game (in progress) |
 
 ## Section Highlights
-
-### Section 11 - Abstraction
-
-This section is split into four parts, two lessons and two challenges.
-
-<details>
-<summary><b>AbstractClasses</b> - how abstract classes and abstract methods work</summary>
-
-<br>
-
-Abstraction is about choosing the right level of detail. Abstract classes describe a general category and define the behavior that subclasses are required to have.
-
-- Abstract classes cannot be instantiated, but can have constructors that subclasses call.
-- Abstract methods have no body and must be implemented by concrete subclasses.
-- Abstract classes can extend other abstract classes, and even concrete classes.
-- An abstract subclass can implement all, some or none of its parent's abstract methods.
-
-```java
-public abstract class Animal {
-    public abstract void move();
-    public abstract void makeNoise();
-}
-
-public abstract class Mammal extends Animal {
-    public abstract void shedHair();
-}
-```
-
-</details>
-
-<details>
-<summary><b>AbstractClassChallenge</b> - a store front for any item for sale</summary>
-
-<br>
-
-A store application built around an abstract `ProductForSale` class.
-
-- `Store` holds the `main` method, manages a list of products and an order, and prints a sales receipt.
-- `ProductForSale` has a type, price and description, with concrete `getSalesPrice` and `printPricedItem` methods and an abstract `showDetails` method.
-- `OrderItem` is a record with a quantity and a product.
-- Two or three product classes extend `ProductForSale`.
-
-</details>
-
-<details>
-<summary><b>Interface</b> - contracts between classes and client code</summary>
-
-<br>
-
-An interface is a special type that works as a contract enforced by the compiler, letting classes with little in common be treated as the same type.
-
-- A class can extend one class but implement many interfaces.
-- Interface members are implicitly `public`, and interface fields are always `public static final`.
-- Interfaces can extend multiple interfaces.
-- Coding to an interface makes code easier to scale and refactor.
-
-```java
-public class Bird extends Animal implements FlightEnabled, Trackable {
-    // implements move(), takeOff(), fly(), land() and track()
-}
-
-FlightEnabled flier = new Bird();
-```
-
-</details>
-
-<details>
-<summary><b>InterfaceChallenge</b> - generating mappable output with the Mappable interface</summary>
-
-<br>
-
-An application that produces GeoJSON-like text for map features, using a `Mappable` interface.
-
-- `Mappable` requires `getLabel()`, `getShape()` and `getMarker()`, and includes a `JSON_PROPERTY` constant, a default `toJSON()` method and a static `mapIt()` method.
-- `Building` is drawn as a point and `UtilityLine` is drawn as a line.
-- Enums model geometry, colors, markers, building usage and utility types.
-
-Example output:
-
-```
-"properties": {"type": "POINT", "label": "Sydney Town Hall (GOVERNMENT)", "marker": "RED STAR", "name": "Sydney Town Hall", "usage": "GOVERNMENT"}
-"properties": {"type": "LINE", "label": "College St (FIBER_OPTIC)", "marker": "GREEN DOTTED", "name": "College St", "utility": "FIBER_OPTIC"}
-```
-
-</details>
 
 ### Section 12 - Java Generics
 
@@ -310,6 +238,8 @@ Wraps an `Employee` record in a local class with calculated fields, such as full
 
 ### Section 14 - Mastering Java Lambdas
 
+Seven projects that take lambdas from the first example to chained functional interfaces.
+
 <details>
 <summary><b>LambdaIntro</b> - from anonymous classes to lambda expressions</summary>
 
@@ -324,6 +254,78 @@ An introduction to lambda expressions, using a `Person` record and sorting a lis
 ```java
 people.sort((o1, o2) -> o1.lastName().compareTo(o2.lastName()));
 ```
+
+</details>
+
+<details>
+<summary><b>LambdaExpressions, MiniLambdaChallenges and LambdaExpressionChallenge</b> - writing and practicing lambdas</summary>
+
+<br>
+
+- Functional interfaces and the built-in types from `java.util.function`, such as `Consumer`, `Function`, `Predicate` and `Supplier`.
+- Small challenges that turn anonymous classes and loops into lambda expressions.
+- A larger challenge that applies several functional interfaces to the same data.
+
+</details>
+
+<details>
+<summary><b>MethodReferences and MethodReferenceChallenge</b> - shorter lambdas with <code>::</code></summary>
+
+<br>
+
+- Static, instance and constructor method references.
+- Replacing a lambda with a method reference when it only calls an existing method, such as `System.out::println`.
+
+</details>
+
+<details>
+<summary><b>ChainingLambdas</b> - combining functional interfaces</summary>
+
+<br>
+
+- Chaining with `andThen`, `compose`, `and`, `or` and `negate`.
+- Building comparators with `Comparator.comparing`, `thenComparing` and `reversed`.
+
+</details>
+
+### Section 15 - Collections Framework: Lists, Sets and Maps
+
+This section introduces the `Collection` interface, the common base of lists and sets, and the utility methods that work on it.
+
+<details open>
+<summary><b>CollectionsMethods</b> - Collections methods on a card deck and a five card draw poker game</summary>
+
+<br>
+
+The featured project of the latest section, in two parts.
+
+**Part 1: Collections methods.** A `Card` record models a standard 52 card deck, and the `Collections` utility class is used to work with it: `fill`, `nCopies`, `addAll`, `shuffle`, `reverse`, `rotate`, `disjoint`, `indexOfSubList`, `min` and `max`, together with `subList` views.
+
+**Part 2: a poker game (the challenge).** Several players are dealt five cards each, every hand is ranked, and the results are printed with the suit symbols.
+
+- `PokerGame` deals the cards and `PokerHand` ranks each hand, from no combination up to four of a kind, including pairs, three of a kind and full house.
+- `Ranking` is an enum that holds the possible hands, so they can be compared and sorted.
+- A `Consumer` chained with `andThen` evaluates a hand and prints it, which reuses the lambda concepts from Section 14.
+
+```java
+Consumer<PokerHand> checkHand = PokerHand::evalHand;
+pokerHands.forEach(checkHand.andThen(System.out::println));
+```
+
+Because the output uses the symbols for the four suits, the project README explains how to set the PowerShell console to UTF-8 so they display correctly on Windows.
+
+[Read the full CollectionsMethods README](Section15_Framework_List_Sets_Maps/CollectionsMethods/README.md)
+
+</details>
+
+<details>
+<summary><b>CollectionsOverview</b> - the <code>Collection</code> interface</summary>
+
+<br>
+
+- Declaring a variable as `Collection<String>` and assigning a `TreeSet<>` to it.
+- Using the methods shared by every collection: `addAll`, `contains` and `removeIf`.
+- A `Collection` has no `sort()` method, because not every collection is ordered by position.
 
 </details>
 
@@ -387,7 +389,8 @@ java -cp out Section6_Conditional.SwitchStatement
 - [x] Abstraction: abstract classes and interfaces
 - [x] Generics
 - [x] Nested classes, local types and anonymous classes
-- [ ] Lambda expressions (in progress)
+- [x] Lambda expressions and method references
+- [ ] Collections Framework: lists, sets and maps (in progress)
 - [ ] Continue with the remaining sections of the course
 - [ ] Explore the Java 21 features when they are added to the course
 - [ ] Move on to the Spring Framework
