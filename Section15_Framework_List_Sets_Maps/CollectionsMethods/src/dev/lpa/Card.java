@@ -77,6 +77,5 @@ public record Card(Suit suit, String face, int rank) {
             System.out.println();
         }
     }
-
     
 }

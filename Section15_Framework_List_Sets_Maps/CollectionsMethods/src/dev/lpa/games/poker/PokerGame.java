@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Consumer;
 
 import dev.lpa.Card;
 
@@ -32,7 +33,15 @@ public class PokerGame {
 
         deal();
         System.out.println("-------------------------------------");
-        pokerHands.forEach(System.out::println);
+        Consumer<PokerHand> checkHand = PokerHand::evalHand;
+        pokerHands.forEach(checkHand.andThen(System.out::println));
+
+        int cardsDealt = playerCount * cardsInHand;
+        int cardsRemaining = deck.size() - cardsDealt;
+
+        remaingCards = new ArrayList<>(Collections.nCopies(cardsRemaining, null));
+        remaingCards.replaceAll(c -> deck.get(cardsDealt + remaingCards.indexOf(c)));
+        Card.printDeck(remaingCards, "Remaining Cards", 2);
         
     }
 
